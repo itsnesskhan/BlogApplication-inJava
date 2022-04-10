@@ -55,8 +55,6 @@ public class SignupServlet extends HttpServlet {
 		String checkbox = request.getParameter("urtc");
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		System.out.println(name);
-		System.out.println("tc"+checkbox);
 		if (checkbox == null) {
 			out.println("Please agree to the tearms and conditions");
 		} else if (name.isEmpty()) {
